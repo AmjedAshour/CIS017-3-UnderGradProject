@@ -1,6 +1,8 @@
 # Secure Inbox - Browser Extension
 
-**Secure Inbox** is a browser extension created as part of my undergraduate thesis project. It serves as a proof-of-concept for a potential solution to help address the growing issue of phishing. Please note that this project is not intended for general usage.
+**Secure Inbox** is a browser extension created as part of my undergraduate thesis project. It serves as a proof-of-concept for a potential solution to help address the growing issue of phishing.
+>[!IMPORTANT]
+>Please note that this project is not intended for general usage.
 
 ## Description
 
