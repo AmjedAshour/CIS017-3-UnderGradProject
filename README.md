@@ -61,6 +61,6 @@ This project is licensed under the [MIT License](LICENSE).
 Feel free to explore the code, review the architecture, and examine the integration of various technologies. If you have any questions, or would like to read the research paper, please don't hesitate to [contact me](mailto:eamjadashour@gmail.com).
 
 ##Screenshots
-![Alt text](/https://imgur.com/fJMctWc)
+![Alt text](https://imgur.com/fJMctWc)
 ![Alt text](https://imgur.com/sU5KLll)
 
