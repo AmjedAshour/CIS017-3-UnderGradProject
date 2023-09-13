@@ -31,7 +31,7 @@ def extract_files_from_email(attachment):
 
 def scan_urls_for_malicious_content(urls_list):
     threats = []
-    vt_key = "77a8418f234367911df400b30492d6018239a758ab67ac0bd976914ad7078fce"
+    vt_key = "YOUR VIRUSTOTAL API KEY"
     vt = VirusTotalPublicApi(vt_key)
     for i in urls_list:
         resp_url = vt.get_url_report(i)
@@ -39,7 +39,7 @@ def scan_urls_for_malicious_content(urls_list):
         res_url_counts = json.loads(res_url)
 
         if 'positives' in res_url_counts:
-            API_KEY = "AIzaSyDvJ_-riZmGmFXdhLsaBQ1BfdORm1LwXfk"
+            API_KEY = "YOUR GOOGLE SAFEBROWSING API KEY"
             URL = "https://safebrowsing.googleapis.com/v4/threatMatches:find?key=" + API_KEY
             urls = ["https://example.com", "https://malware.com"]
             threat_info = {
@@ -64,7 +64,7 @@ def scan_urls_for_malicious_content(urls_list):
 
 def scan_files_for_malicious_content(files_list):
     file_positive_count = 0
-    vt_key = "77a8418f234367911df400b30492d6018239a758ab67ac0bd976914ad7078fce"
+    vt_key = "YOUR VIRUSTOTAL API KEY"
     vt = VirusTotalPublicApi(vt_key)
     for i in files_list:
         resp_file = vt.get_url_report(i)
@@ -91,9 +91,9 @@ def generate_text_prompt(sender, title, mainBody):
 @cross_origin(origin='localhost', headers=['Content-Type', 'Authorization'])
 def analyse():
     start_time = time.perf_counter()
-    vt_key = "77a8418f234367911df400b30492d6018239a758ab67ac0bd976914ad7078fce"
+    vt_key = "YOUR VIRUSTOTAL API KEY"
     vt = VirusTotalPublicApi(vt_key)
-    OA_key = "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"
+    OA_key = "YOUR OPENAI API KEY"
     openai.api_key = OA_key
     model = "text-davinci-003"
 
